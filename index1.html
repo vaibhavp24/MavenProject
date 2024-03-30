@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>AngularJS Custom Directive Example</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!-- <script src="lib/angular.min.js"></script> -->
+    <script src="app/app.module.js"></script>
+    <script src="app/controllers/mainController.js"></script>
+    <script src="app/directives/changeBackgroundColorDirective.js"></script>
+</head>
+
+<body ng-controller="MyController" ng-style="{'background-color': backgroundColor}">
+
+    <!-- Use the custom directive to generate the color dropdown -->
+    <change-background-color ng-model="backgroundColor"
+        on-color-change="onColorChange(color)"></change-background-color>
+
+    <!-- Display the selected color -->
+    <p>Selected Color: {{ selectedColor }}</p>
+
+</body>
+
+</html>

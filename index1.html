@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <title>AngularJS Custom Directive Example</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <!-- <script src="lib/angular.min.js"></script> -->
-    <script src="app/app.module.js"></script>
-    <script src="app/controllers/mainController.js"></script>
-    <script src="app/directives/changeBackgroundColorDirective.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
 </head>
-
-<body ng-controller="MyController" ng-style="{'background-color': backgroundColor}">
-
-    <!-- Use the custom directive to generate the color dropdown -->
-    <change-background-color ng-model="backgroundColor"
-        on-color-change="onColorChange(color)"></change-background-color>
-
-    <!-- Display the selected color -->
-    <p>Selected Color: {{ selectedColor }}</p>
-
+<body>
+<p class="p1"><span class="s1">Selected Color: {{ selectedColor }}</span></p>
+<p class="p1"><span class="s1">System.out.print(“Hello”);</span></p>
 </body>
-
 </html>
